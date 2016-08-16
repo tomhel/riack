@@ -1,6 +1,11 @@
 #Riack
 Is a C client library for Riak.
 
+This is a fork of trifork/riack that:
+- Adds TLS and authentication support
+- Fixes some bugs
+- Probably adds some new bugs ;)
+
 ##Compilation
 ###Dependencies
 

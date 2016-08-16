@@ -1,8 +1,8 @@
 #ifndef __RIACK__CONFIG__H__
 #define __RIACK__CONFIG__H__
 
-#define Riack_VERSION_MAJOR 1
-#define Riack_VERSION_MINOR 1
+#define Riack_VERSION_MAJOR 2
+#define Riack_VERSION_MINOR 0
 
 #define HAVE_STDINT_H 1
 
