@@ -14,6 +14,7 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 */
+#define _XOPEN_SOURCE 600
 #define _CRT_SECURE_NO_WARNINGS
 #include "riack-config.h"
 #include "riack_sock.h"
@@ -27,12 +28,12 @@
 #include <ws2tcpip.h>
 #pragma comment(lib, "Ws2_32.lib")
 #else
-#define __USE_POSIX
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <sys/time.h>
 #include <unistd.h>
 #include <netdb.h>
+#include <netinet/in.h>
 #include <netinet/tcp.h>
 #endif
 
