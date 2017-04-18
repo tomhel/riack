@@ -1,4 +1,4 @@
-#Riack
+# Riack
 Is a C client library for Riak.
 
 This is a fork of trifork/riack that:
@@ -6,20 +6,20 @@ This is a fork of trifork/riack that:
 - Fixes some bugs
 - Probably adds some new bugs ;)
 
-##Compilation
-###Dependencies
+## Compilation
+### Dependencies
 
-####cmake
+#### cmake
 Riack uses cmake build system which means it can be compiled on most systems.
 Make sure you have installed cmake if not find it here http://www.cmake.org/ or
 if your fortunate enough to be an OS with a package manager just install it with that.
 
-####wolfSSL (optional)
+#### wolfSSL (optional)
 Riack uses wolfSSL to support TLS/SSL connections and authentication. Tested with wolfSSL 3.9.0. Other versions will most likely work fine. Find it here https://github.com/wolfSSL/wolfssl
 
 ECC (Elliptic Curve Cryptography) is currently not supported.
 
-###Ready
+### Ready
 Get a prompt and move to Riack top folder and do
 ```
 cmake src/
@@ -38,7 +38,7 @@ Note on windows you might need to tell cmake where to find the Protobuf-C files
 You can do this by passing some options to cmake which is hard to remember ;) I recommend 
 to just edit src\cmake\Modules\FindProtoBufC.cmake lines 19 & 20.
 
-##Examples
+## Examples
 
 Connect to Riak and ping it
 ```c
@@ -110,7 +110,7 @@ riack_cleanup();
 To see more examples of this look in the examples directory.
 Before the examples can run you must place the compiled library files in the precompiled folder (see the precompiled/README.md file for details).
 
-##Tests
+## Tests
 To make all tests succeed you need a running riak server with eleveldb backend and riak search enabled in app.config.
 You also need to have seach enabled on the ´testsearch´ bucket, this can be done using the riak search-cmd like this:
 ```
@@ -126,17 +126,17 @@ If your server is running on localhost with port 8087 set as protocol buffer por
 When ready you can simply do a make test.
 (on windows just choose the correct build target in Visual Studio)
 
-##Built with Riack
+## Built with Riack
 
-###php_riak
+### php_riak
 PHP extension featuring persistent connection, autoreconnect and a PHP session module.
 https://github.com/TriKaspar/php_riak
 
-###Riack++
+### Riack++
 A C++ wrapper can be found here https://github.com/TriKaspar/riack_cpp
 It does not require anything but riack and a C++ compiler.
 
-##Disclamer
+## Disclamer
 This is a sparetime project, so if you so a silly bug don't blame my employer, instead 
 make a pull request ;)  
 
